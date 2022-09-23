@@ -1,0 +1,63 @@
+/**
+ *
+ * STYLE: Page Selflist Customer Profile
+ *
+ */
+
+.customer-profile-page {
+  .menu-customer-profile-menu-container {
+    // border: 4px dotted dodgerblue;
+    margin-top: 0.7rem;
+  }
+  // border: 4px dotted dodgerblue;
+  @media (max-width: 400px) {
+    input {
+      font-size: 0.8rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+  #profile-menu {
+    // border: 4px dotted dodgerblue;
+    padding-inline-start: 0px;
+    @media (max-width: 767px) {
+      margin-bottom: 3rem;
+    }
+
+    li {
+      list-style: none;
+      border: 1px solid $cg-secondary;
+      border-bottom: 1px solid white;
+
+      a {
+        color: white;
+        display: block;
+        padding: 1rem;
+        background-color: $cg-secondary;
+        &:hover {
+          background-color: $cg-primary;
+        }
+      }
+    }
+    li:first-child {
+      border-top: 1px solid $cg-secondary !important;
+    }
+    li:last-child {
+      border-bottom: 1px solid $cg-secondary;
+    }
+    li.current-menu-item {
+      border-right: 1px solid white;
+      border-top: 1px solid white;
+      font-weight: bold;
+
+      a {
+        color: $cg-primary;
+        background-color: white;
+      }
+    }
+  }
+}

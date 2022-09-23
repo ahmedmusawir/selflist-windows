@@ -1,0 +1,77 @@
+$cg-primary: red; //light greenish blue
+$cg-secondary: #230665; //dark blue
+$cg-third: red;
+$cg-text: #050505; //black
+$cg-button: #230665; //purple
+
+body.login {
+  background-color: white;
+  // background-color: red;
+  // background: url('/wp-content/uploads/Group-236.png');
+}
+
+body.login div#login {
+  // LOGO DISTANCE FROM THE TOP
+  padding-top: 8rem;
+}
+body.login div#login h1 {
+}
+body.login div#login h1 a {
+}
+body.login div#login form#loginform {
+  border-color: $cg-primary !important;
+  label {
+    display: none;
+  }
+  label[for='rememberme'] {
+    display: block;
+    float: right;
+    color: red;
+  }
+}
+body.login div#login form#loginform p {
+}
+body.login div#login form#loginform p label {
+}
+body.login div#login form#loginform input {
+  border-color: $cg-primary !important;
+  &:focus {
+    box-shadow: 0 0 0 1px $cg-primary !important;
+  }
+}
+body.login div#login form#loginform input#user_login {
+}
+body.login div#login form#loginform input#user_pass {
+}
+body.login div#login form#loginform p.forgetmenot {
+}
+body.login div#login form#loginform p.forgetmenot input#rememberme {
+  margin-top: 0.05rem !important;
+}
+body.login div#login form#loginform p.submit {
+  background: $cg-primary;
+  border-color: $cg-primary;
+}
+body.login div#login form#loginform p.submit input#wp-submit {
+  background: $cg-primary;
+  border-color: $cg-primary;
+}
+body.login div#login p#nav {
+  border-color: #e7e7e7;
+  background-color: #e7e7e7;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+}
+body.login div#login p#nav a {
+  color: $cg-primary;
+  font-size: 1rem;
+  font-weight: 600;
+}
+body.login div#login p#backtoblog {
+  display: none;
+}
+body.login div#login p#backtoblog a {
+  color: $cg-text;
+  font-size: 1rem;
+  font-weight: 600;
+}
