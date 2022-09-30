@@ -63,8 +63,12 @@ import FlagListButtonUi from './_modules/selflist-flag/FlagListButtonUi';
 import FlagListFormAjax from './_modules/selflist-flag/FlagListFormAjax';
 // SYNC WP USERS WITH CHAT ENGINE
 import CreateWPUsersInChatEngine from './_modules/chat-engine/CreateWPUsersInChatEngine';
-// LOGIN REDIRECT FOR NON-LOGGED IN USERS WHO COMES FROM THE LIST CREATE PAGE FOR NON MEMBERS
-import LoginRedirect from './_modules/selflist-login-redirect/LoginRedirect';
+// SIGNUP REDIRECT COOKIE CREATION FOR NON-LOGGED IN USERS TO TRACK THE ORIGIN PAGE
+import SignupRedirect from './_modules/selflist-signup-redirect/SignupRedirect';
+// THE FAKE LIST PAGE FOR THE NON MEMBERS
+import FakeListInsertEventsAjax from './_modules/selflist-fake-list-page/FakeListInsertEventsAjax';
+import FakeListInsertUiDataParent from './_modules/selflist-fake-list-page/FakeListInsertUiDataParent';
+import FakeListInsertValidationEvents from './_modules/selflist-fake-list-page/FakeListInsertValidationEvents';
 
 class App {
   constructor() {
@@ -172,8 +176,13 @@ class App {
     // Creating WP Users in Chat Engine
     // new CreateWPUsersInChatEngine();
 
-    // Login Redirect for List Creation page for non-members
-    new LoginRedirect();
+    // Signup Redirect for List Creation page for non-members
+    new SignupRedirect();
+
+    // Fake List Page For Non Members
+    new FakeListInsertEventsAjax();
+    new FakeListInsertUiDataParent();
+    new FakeListInsertValidationEvents();
   }
 }
 

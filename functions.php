@@ -173,6 +173,26 @@ require get_theme_file_path('/_functions/selflist/wp-admin/manual-login-logout.p
 
 // PAGE REDICTION AND COOKIE MAKING AJAX ETC.
 require get_theme_file_path('/_functions/selflist/ajax/make-cookie-and-redirect-ajax.php');
+require get_theme_file_path('/_functions/selflist/ajax/make-cookie-and-redirect-ajax-test.php');
 
 // AUTO LOGIN: NO LONGER USING THE AUTO LOGIN PLUGIN
-require get_theme_file_path('/_functions/selflist/wp-admin/signup-redirection.php');
+// require get_theme_file_path('/_functions/selflist/wp-admin/signup-redirection.php');
+
+// ============================ TESTING ===================================
+
+// function run_JS_on_logout()
+// {
+//  function wpdocs_theme_name_scripts()
+//  {
+
+//   //CYBERIZE FRAMEWORK 1.0 HMU UNIFIED AND MINIFIED
+//   wp_enqueue_script('MooseTest-js', get_template_directory_uri() . '/assets/dist/js/MooseTest.js', array('jquery'), time(), true);
+//  }
+
+//  add_action('wp_enqueue_scripts', 'wpdocs_theme_name_scripts');
+
+// }
+
+// add_action('wp_logout', 'run_JS_on_logout');
+
+// ============================ TESTING ===================================

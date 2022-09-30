@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import ListInsertUiDataParent from './ListInsertUiDataParent';
+import FakeListInsertUiDataParent from './FakeListInsertUiDataParent';
 // Using commonjs
 // require('jquery-validation');
 // require('jquery-validation/dist/additional-methods.js');
@@ -7,14 +7,14 @@ import ListInsertUiDataParent from './ListInsertUiDataParent';
 import 'jquery-validation';
 import 'jquery-validation/dist/additional-methods.js';
 
-class ListInsertValidationEvents extends ListInsertUiDataParent {
+class FakeListInsertValidationEvents extends FakeListInsertUiDataParent {
   constructor() {
     super();
     this.init();
     // The List Form
-    this.theListForm = $('#list-insert-main-form');
+    this.theListForm = $('#fake-list-insert-main-form');
     // The Form Submit button is now list-user-validation-button
-    this.userValidationButton = $('#list-user-validation-button');
+    // this.userValidationButton = $('#list-user-validation-button');
     // The Cancel button
     this.userValidationCancellButton = $('#list-insert-cancel-btn');
     // BUG FIX
@@ -237,4 +237,4 @@ class ListInsertValidationEvents extends ListInsertUiDataParent {
   // };
 }
 
-export default ListInsertValidationEvents;
+export default FakeListInsertValidationEvents;

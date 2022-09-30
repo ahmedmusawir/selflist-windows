@@ -4,9 +4,7 @@ class LoginRedirect {
   constructor() {
     // COLLECTING AJAX INFO
     this.ajaxUrl = selflistData.ajax_url;
-    this.ajaxFunction = 'make_cookie_and_redirect_ajax';
-
-    console.log('Fake User Name: ', this.userName);
+    this.ajaxFunction = 'make_cookie_and_redirect_ajax_test';
 
     this.init();
     // COLLECTING ELEMENTS
@@ -63,7 +61,7 @@ class LoginRedirect {
       })
       .always(() => {
         // REDIRECT TO PREVIEW PAGE
-        window.location.href = '/list-signup/';
+        // window.location.href = '/list-signup/';
         // console.log('Ajax Dynamic Loaction Filter Complete');
       });
   };

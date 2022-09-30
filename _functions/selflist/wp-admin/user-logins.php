@@ -98,6 +98,7 @@ function selflist_redirect_after_logout()
 {
  wp_redirect('/');
  exit();
+
 }
 
 add_action('wp_logout', 'selflist_redirect_after_logout');
